@@ -1,6 +1,14 @@
 
 public class TabAlgos {
 	/**
+     * Constructeur protected avec exception
+     *  pour empecher l'instantiation de la classe.
+	 * @throws Exception 
+     */
+    protected TabAlgos() throws Exception {
+      throw new Exception("cette classe ne peut pas être instanciée");
+    }
+	/**
      * @param tab tableau d'entiers
      * @return valeur la plus grande d'un tableau.
      */
